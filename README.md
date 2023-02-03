@@ -1,0 +1,78 @@
+hello
+
+```mermaid
+
+---
+title: Data Garage Branching Guidelines
+---
+
+gitGraph
+    commit
+    branch "release"
+    checkout "main"
+    commit
+    branch "feature/feature-A"
+    commit
+    commit
+    commit
+    checkout "main"
+    merge "feature/feature-A"
+    branch "feature/feature-B"
+    checkout "feature/feature-B"
+    commit
+    commit
+    checkout "main"
+    merge "feature/feature-B"
+    branch "bugfix/bugfix-A"
+    commit
+    checkout "main"
+    merge "bugfix/bugfix-A"
+    checkout "release"
+    merge "main"
+    checkout "release"
+    branch "hotfix/hotfix-A"
+    commit
+    checkout "release"
+    merge "hotfix/hotfix-A"
+    checkout "main"
+    merge "release"
+
+```
+
+```mermaid
+
+---
+title: Overview of Math Sorcerer Scraper
+---
+
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'fontSize': '12px',
+      'primaryTextColor': '#000000',
+    }
+  }
+}%%
+
+flowchart TB;
+    idStart(["Start"]);
+    idEnd(["End"]);
+    idImportModules["import the following python libraries...\n&#8226; requests\n&#8226 bs4\n&#8226 polars\n&#8226 os\n&#8226 logging"];
+    idStartProgramLoop["start program loop"];
+    idOutputPrompt[/"output to console welcome screen"/];
+    idOutputMenuSelect[/"output to console the following menu selection...\n&#8226 d"/];
+    idOutputRequestUserInput[/"request user input"/];
+    idRecieveUserInput[/"recieve user input"/];
+    idDeterminMenuSelection{"What option did\n the user\n select from\n the menu?"};
+    idUpdateMathSorcererDatabase["update math sorcerer database"];
+    %% requests
+    %% bs4
+    %% pandas
+
+    idStart-->idImportModules-->idStartProgramLoop
+    idStartProgramLoop-->idOutputPrompt-->idOutputMenuSelect;
+    idOutputMenuSelect-->idOutputRequestUserInput-->idRecieveUserInput-->idDeterminMenuSelection-- 1. Update the math sorcerer database -->idUpdateMathSorcererDatabase;idUpdateMathSorcererDatabase-->idStartProgramLoop;
+    idDeterminMenuSelection-- 2. Exit -->idEnd;
+    
+```
