@@ -101,3 +101,9 @@ flowchart TB;
     id7-->idEnd
     
 ```
+
+ ```mermaid 
+ %%{init: { 'theme':'dark', 'sequence': {'useMaxWidth':false} } }%%
+ sequenceDiagram 
+   alice ->> mark: Sent a flower
+ ```
