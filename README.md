@@ -82,8 +82,8 @@ flowchart TB;
 
     %% Update the math sorcerer database
     id8["update math sorcerer database"];
-    id9["run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <code>response</code>"]
-    id10["use BeautifulSoup, with to parse the <code>response.content</code> variable and store into a variable named soup"]
+    id9["run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <b>response</b>"]
+    id10["use BeautifulSoup, with lxml, to parse the <b>response.content</b> variable and store into a variable named soup"]
 
     %% requests
     %% bs4
