@@ -89,7 +89,9 @@ flowchart TB;
     %% bs4
     %% pandas
 
-    idStart-->id1-->id2-->id3-->id4-->id5-->id6-->id7-->id8-->id9-->id10-->idEnd;
+    idStart-->id1-->id2-->id3-->id4-->id5-->id6-->id7;
+    id7-->id8-->id9-->id10-->id7;
+    id7-->idEnd;
     
 ```
 </details>
