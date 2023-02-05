@@ -89,15 +89,17 @@ flowchart TB;
 
     %% Update the math sorcerer database
     id8["update math sorcerer database"]
-    id9["run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <b>response</b>"]
-    id10["use BeautifulSoup, with lxml, to parse the <b>response.content</b> variable and store into a variable named soup"]
+    id9["run request on the url of <a href='https://www.amazon.com/shop/themathsorcerer'>The Math Sorcerer's Lair</a> and store into variable called <b>response</b>"]
+    id10["Use BeautifulSoup, with lxml, to parse <b>response.content</b> variable and store into a variable named <b>soup</b>"]
+    id11["Use BeautifulSoup to find all amazon lists in the soup that are related to mathemtics, physics, etc. and store into variable called lists"]
+    id12["save"]
 
     %% requests
     %% bs4
     %% pandas
 
     idStart-->id1-->id2-->id3-->id4-->id5-->id6-->id7
-    id7-->id8-->id9-->id10-->id7
+    id7-->id8-->id9-->id10-->id11-->id12-->id7
     id7-->idEnd
     
 ```
