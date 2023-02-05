@@ -8,7 +8,7 @@ hello
 ---
 title: Data Garage Branching Guidelines
 ---
-
+  
 gitGraph
     commit
     branch "release"
@@ -43,14 +43,23 @@ gitGraph
 ```
 </details>
 
-<details>
-  <summary>Overview of Math Sorcerer Scraper</summary>
+
+<style>
+  .cssClass > rect {
+    fill: #ff0000;
+    stroke: #ffff00;
+    stroke-width: 4px;
+  }
+</style>
+
 
 ```mermaid
 
 ---
 title: Overview of Math Sorcerer Scraper
 ---
+
+classDef notMoving fill:red  
 
 %%{
   init: {
@@ -64,24 +73,24 @@ title: Overview of Math Sorcerer Scraper
 
 flowchart TB;
     %% Start and End nodes
-    idStart([Start]);
-    idEnd([End]);
+    idStart([Start])
+    idEnd([End])
 
     %% Importing modules and other libraries
-    id1{{"import the following python libraries... \n &#8226 requests \n &#8226 bs4 \n &#8226 polars \n &#8226 os \n &#8226 logging"}};
+    id1{{"import the following python libraries... \n &#8226 requests \n &#8226 bs4 \n &#8226 polars \n &#8226 os \n &#8226 logging"}}
 
     %% Start program loop
-    id2["start program <code>while</code> loop"];
+    id2["start program <code>while</code> loop"]
 
     %% Console menu processes
-    id3[/"output to console welcome screen"/];
-    id4[/"output to console the following menu selection...\n&#8226 d"/];
-    id5[/"request user input"/];
-    id6[/"recieve user input"/];
-    id7{"what option did\n the user\n select from\n the menu?"};
+    id3[/"output to console welcome screen"/]
+    id4[/"output to console the following menu selection...\n&#8226 d"/]
+    id5[/"request user input"/]
+    id6[/"recieve user input"/]
+    id7{"what option did\n the user\n select from\n the menu?"}
 
     %% Update the math sorcerer database
-    id8["update math sorcerer database"];
+    id8["update math sorcerer database"]
     id9["run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <b>response</b>"]
     id10["use BeautifulSoup, with lxml, to parse the <b>response.content</b> variable and store into a variable named soup"]
 
@@ -89,9 +98,8 @@ flowchart TB;
     %% bs4
     %% pandas
 
-    idStart-->id1-->id2-->id3-->id4-->id5-->id6-->id7;
-    id7-->id8-->id9-->id10-->id7;
-    id7-->idEnd;
+    idStart-->id1-->id2-->id3-->id4-->id5-->id6-->id7
+    id7-->id8-->id9-->id10-->id7
+    id7-->idEnd
     
 ```
-</details>
