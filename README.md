@@ -75,7 +75,7 @@ flowchart TB;
     idEnd([End])
 
     %% Importing modules and other libraries
-    id1{{"import the following python libraries... \n &#8226 requests \n &#8226 bs4 \n &#8226 polars \n &#8226 os \n &#8226 logging"}}
+    id1{{"import the following python libraries... \n &#8226 <b><a href='https://requests.readthedocs.io/en/latest/'>requests</a></b> \n &#8226 <b><a href='https://www.crummy.com/software/BeautifulSoup/'>bs4</a></b> \n &#8226 <b><a href='https://www.pola.rs/'>Polars</a></b> \n &#8226 <b><a href='https://docs.python.org/3/library/os.html'>os</a></b> \n &#8226 <b><a href='https://docs.python.org/3/howto/logging.html'>logging</a></b>"}}
 
     %% Start program loop
     id2["start program <code>while</code> loop"]
