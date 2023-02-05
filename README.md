@@ -71,19 +71,19 @@ flowchart TB;
     idImportModules{{"import the following python libraries... <ul> <li>&#8226 requests</li> <li>&#8226 bs4</li>  <li>&#8226 polars</li> <li>&#8226 os</li> <li>&#8226 logging</li> </ul>"}};
 
     %% Start program loop
-    idStartProgramLoop[start program <code>while</code> loop];
+    idStartProgramLoop["start program <code>while</code> loop"];
 
     %% Console menu processes
-    idOutputPrompt[/output to console welcome screen/];
-    idOutputMenuSelect[/output to console the following menu selection...\n&#8226 d/];
-    idOutputRequestUserInput[/request user input/];
-    idRecieveUserInput[/recieve user input/];
-    idDeterminMenuSelection{what option did\n the user\n select from\n the menu?};
+    idOutputPrompt[/"output to console welcome screen"/];
+    idOutputMenuSelect[/"output to console the following menu selection...\n&#8226 d"/];
+    idOutputRequestUserInput[/"request user input"/];
+    idRecieveUserInput[/"recieve user input"/];
+    idDeterminMenuSelection{"what option did\n the user\n select from\n the menu?"};
 
     %% Update the math sorcerer database
     idUpdateMathSorcererDatabase["update math sorcerer database"];
-    idRequestMathSorcererURL[run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <code>response</code>]
-    idUseBS4to[use BeautifulSoup, with to parse the <code>response.content</code> variable and store into a variable named soup]
+    idRequestMathSorcererURL["run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <code>response</code>"]
+    idUseBS4to["use BeautifulSoup, with to parse the <code>response.content</code> variable and store into a variable named soup"]
 
     %% requests
     %% bs4
