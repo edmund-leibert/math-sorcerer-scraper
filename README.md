@@ -64,26 +64,26 @@ title: Overview of Math Sorcerer Scraper
 
 flowchart TB;
     %% Start and End nodes
-    idStart(["Start"]);
-    idEnd(["End"]);
+    idStart([Start]);
+    idEnd([End]);
 
     %% Importing modules and other libraries
-    idImportModules{{"import the following python libraries...\n&#8226; requests\n&#8226 bs4\n&#8226 polars\n&#8226 os\n&#8226 logging"}};
+    idImportModules{{import the following python libraries...\n&#8226; requests\n&#8226 bs4\n&#8226 polars\n&#8226 os\n&#8226 logging}};
 
     %% Start program loop
-    idStartProgramLoop["start program <code>while</code> loop"];
+    idStartProgramLoop[start program <code>while</code> loop];
 
     %% Console menu processes
-    idOutputPrompt[/"output to console welcome screen"/];
-    idOutputMenuSelect[/"output to console the following menu selection...\n&#8226 d"/];
-    idOutputRequestUserInput[/"request user input"/];
-    idRecieveUserInput[/"recieve user input"/];
-    idDeterminMenuSelection{"What option did\n the user\n select from\n the menu?"};
+    idOutputPrompt[/output to console welcome screen/];
+    idOutputMenuSelect[/output to console the following menu selection...\n&#8226 d/];
+    idOutputRequestUserInput[/request user input/];
+    idRecieveUserInput[/recieve user input/];
+    idDeterminMenuSelection{what option did\n the user\n select from\n the menu?};
 
     %% Update the math sorcerer database
     idUpdateMathSorcererDatabase["update math sorcerer database"];
-    idRequestMathSorcererURL["run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <code>response</code>"]
-    idUseBS4to["Use BeautifulSoup, with to parse the <code>response.content</code> variable and store into a variable named soup"]
+    idRequestMathSorcererURL[run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <code>response</code>]
+    idUseBS4to[use BeautifulSoup, with to parse the <code>response.content</code> variable and store into a variable named soup]
 
     %% requests
     %% bs4

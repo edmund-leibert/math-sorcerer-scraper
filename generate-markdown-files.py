@@ -4,6 +4,9 @@ import requests
 import urllib.request
 from bs4 import BeautifulSoup
 import bs4
+import importlib
+
+console_menu = importlib.import_module('scripts.console-menu')
 
 # Header information for the request
 HEADERS = {
@@ -58,42 +61,53 @@ math_sorcerers_lair_amazon_idea_lists: list = [
     "https://www.amazon.com/shop/themathsorcerer/list/M0MLY2DIS25K?ref_=aip_sf_list_spv_ofs_mixed_d",
 ]
 
-# Iterate through the Math Sorcerer’s Lair curated academic lists...
-if False:
-    print("Requesting the following...")
-    for idx, amazon_idea_list in enumerate(math_sorcerers_lair_amazon_idea_lists):
-        r = requests.get(amazon_idea_list, HEADERS)
-        soup = BeautifulSoup(r.text, 'html.parser')
-        print(amazon_idea_list)
-        filename_to_write: str = str(soup.find_all(class_="list-spv-listTitle")[0].contents[0])
-        filename_to_write: str = str(filename_to_write).lower()
-        filename_to_write: str = filename_to_write.replace(" ", "-")
-        filename_to_write: str = filename_to_write.replace("/", "-")
-        filename_to_write: str = filename_to_write.replace(",", "")
-        filename_to_write: str = filename_to_write + ".html"
-        print(filename_to_write)
-        with open("scraped/" + str(filename_to_write), 'w', encoding="utf-8") as fileOpen:
-            fileOpen.write(r.text)
+def main() -> int:
+    while(True):
+        user_selection = console_menu.print_console_menu()
+        if(user_selection[1] == 1):
+            break
+        if(user_selection[1] == 0):
+            break
 
-# assign directory
-directory = 'scraped'
+    return 0;
+
+if __name__ == '__main__':
+    sys.exit(main()) 
+
+# # Iterate through the Math Sorcerer’s Lair curated academic lists...
+# if False:
+#     print("Requesting the following...")
+#     for idx, amazon_idea_list in enumerate(math_sorcerers_lair_amazon_idea_lists):
+#         r = requests.get(amazon_idea_list, HEADERS)
+#         soup = BeautifulSoup(r.text, 'html.parser')
+#         print(amazon_idea_list)
+#         filename_to_write: str = str(soup.find_all(class_="list-spv-listTitle")[0].contents[0])
+#         filename_to_write: str = str(filename_to_write).lower()
+#         filename_to_write: str = filename_to_write.replace(" ", "-")
+#         filename_to_write: str = filename_to_write.replace("/", "-")
+#         filename_to_write: str = filename_to_write.replace(",", "")
+#         filename_to_write: str = filename_to_write + ".html"
+#         print(filename_to_write)
+#         with open("scraped/" + str(filename_to_write), 'w', encoding="utf-8") as fileOpen:
+#             fileOpen.write(r.text)
+
+# # assign directory
+# directory = 'scraped'
  
-print("iterating over files in the scraped directory...")
-# iterate over files in scraped and build all_textbooks
-all_textbooks = zip([],[])
-for filename in os.listdir(directory):
-    f = os.path.join(directory, filename)
-    # checking if it is a file
-    if os.path.isfile(f):
-        print(f)
-        with open(f, "r") as fOpen:
-            soup = BeautifulSoup(fOpen, "html.parser")
-            textbooks = soup.find_all(class_ = "product-title-text")
-            authors = soup.find_all(class_ = "product-brand-text")
-            list_items = zip(textbooks,authors)
-            all_textbooks = all_textbooks.join(list_items)
+# print("iterating over files in the scraped directory...")
+# # iterate over files in scraped and build all_textbooks
+# all_textbooks = zip([],[])
+# for filename in os.listdir(directory):
+#     f = os.path.join(directory, filename)
+#     # checking if it is a file
+#     if os.path.isfile(f):
+#         print(f)
+#         with open(f, "r") as fOpen:
+#             soup = BeautifulSoup(fOpen, "html.parser")
+#             textbooks = soup.find_all(class_ = "product-title-text")
+#             authors = soup.find_all(class_ = "product-brand-text")
+#             list_items = zip(textbooks,authors)
+#             all_textbooks = all_textbooks.join(list_items)
 
-# for textbook in all_textbooks:
-#     print(textbook + " | " + textbook)
-
-print("finish")
+# # for textbook in all_textbooks:
+# #     print(textbook + " | " + textbook)
