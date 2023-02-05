@@ -68,7 +68,7 @@ flowchart TB;
     idEnd([End]);
 
     %% Importing modules and other libraries
-    idImportModules{{"import the following python libraries... <ul> <li>requests</li> <li>bs4</li>  <li>polars</li> <li>os</li> <li>logging</li> </ul>"}};
+    idImportModules{{"import the following python libraries... <ul> <li>&#8226 requests</li> <li>&#8226 bs4</li>  <li>&#8226 polars</li> <li>&#8226 os</li> <li>&#8226 logging</li> </ul>"}};
 
     %% Start program loop
     idStartProgramLoop[start program <code>while</code> loop];
