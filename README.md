@@ -59,13 +59,11 @@ gitGraph
 title: Overview of Math Sorcerer Scraper
 ---
 
-classDef notMoving fill:red  
-
 %%{
   init: {
     'theme': 'base',
     'themeVariables': {
-      'fontSize': '12px',
+      'fontSize': '8px',
       'primaryTextColor': '#000000',
     }
   }
