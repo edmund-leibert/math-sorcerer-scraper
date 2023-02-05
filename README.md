@@ -87,7 +87,7 @@ flowchart TB;
     id6[/"recieve user input"/]
     id7{"what option did\n the user\n select from\n the menu?"}
 
-    %% Update the math sorcerer database
+    %% Scrape the math sorcerer amazon page and update the database
     id8["update math sorcerer database"]
     id9["run request on the url of <a href='https://www.amazon.com/shop/themathsorcerer'>The Math Sorcerer's Lair</a> and store into variable called <pre><code>response</code></pre>"]
     id10["use BeautifulSoup, with lxml, to parse <b>response.content</b> variable and store into a variable named <b>soup</b>"]
@@ -96,11 +96,15 @@ flowchart TB;
     id13["use BeautifulSoup4 to parse through the amazon_list and store all the books in the PostgreSQL database"]
     id14["store the name, edition, etc."]
 
+    %% Print all contents of PostgreSQL database
+    id15["access the postgresql database"]
+    id16["print all records in the database"]
+
     %% requests
     %% bs4
     %% pandas
 
     idStart-->id1-->id2-->id3-->id4-->id5-->id6-->id7
-    id7-->id8-->id9-->id10-->id11-->id12-->id13-->id14-->id7
-    id7-->idEnd
+    id7-->id8-->id9-->id10-->id11-->id12-->id13-->id14-->id7-->idEnd
+    id7-->id15-->id16-->idEnd
 ```
