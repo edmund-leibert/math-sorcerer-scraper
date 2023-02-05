@@ -90,22 +90,17 @@ flowchart TB;
     %% Update the math sorcerer database
     id8["update math sorcerer database"]
     id9["run request on the url of <a href='https://www.amazon.com/shop/themathsorcerer'>The Math Sorcerer's Lair</a> and store into variable called <pre><code>response</code></pre>"]
-    id10["Use BeautifulSoup, with lxml, to parse <b>response.content</b> variable and store into a variable named <b>soup</b>"]
-    id11["Use BeautifulSoup to find all amazon lists in the soup that are related to mathemtics, physics, etc. and store into variable called lists"]
-    id12["save"]
+    id10["use BeautifulSoup, with lxml, to parse <b>response.content</b> variable and store into a variable named <b>soup</b>"]
+    id11["use BeautifulSoup to find all amazon lists in the soup that are related to mathemtics, physics, etc. and store into variable called math_sorcerer_amazon_lists"]
+    id12["iterate through math_sorcerer_amazon_lists and call requests on each list"]
+    id13["use BeautifulSoup4 to parse through the amazon_list and store all the books in the PostgreSQL database"]
+    id14["store the name, edition, etc."]
 
     %% requests
     %% bs4
     %% pandas
 
     idStart-->id1-->id2-->id3-->id4-->id5-->id6-->id7
-    id7-->id8-->id9-->id10-->id11-->id12-->id7
+    id7-->id8-->id9-->id10-->id11-->id12-->id13-->id14-->id7
     id7-->idEnd
-    
 ```
-
- ```mermaid 
- %%{init: { 'theme':'forest', 'sequence': {'useMaxWidth':false} } }%%
- sequenceDiagram 
-   alice ->> mark: Sent a flower
- ```
