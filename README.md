@@ -89,7 +89,7 @@ flowchart TB;
 
     %% Update the math sorcerer database
     id8["update math sorcerer database"]
-    id9["run request on the url of <a href='https://www.amazon.com/shop/themathsorcerer'>The Math Sorcerer's Lair</a> and store into variable called <b>response</b>"]
+    id9["run request on the url of <a href='https://www.amazon.com/shop/themathsorcerer'>The Math Sorcerer's Lair</a> and store into variable called <code>response</code>"]
     id10["Use BeautifulSoup, with lxml, to parse <b>response.content</b> variable and store into a variable named <b>soup</b>"]
     id11["Use BeautifulSoup to find all amazon lists in the soup that are related to mathemtics, physics, etc. and store into variable called lists"]
     id12["save"]
