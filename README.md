@@ -68,31 +68,28 @@ flowchart TB;
     idEnd([End]);
 
     %% Importing modules and other libraries
-    idImportModules{{"import the following python libraries... <ul> <li>&#8226 requests</li> <li>&#8226 bs4</li>  <li>&#8226 polars</li> <li>&#8226 os</li> <li>&#8226 logging</li> </ul>"}};
+    id1{{"import the following python libraries... <ul> <li>&#8226 requests</li> <li>&#8226 bs4</li>  <li>&#8226 polars</li> <li>&#8226 os</li> <li>&#8226 logging</li> </ul>"}};
 
     %% Start program loop
-    idStartProgramLoop["start program <code>while</code> loop"];
+    id2["start program <code>while</code> loop"];
 
     %% Console menu processes
-    idOutputPrompt[/"output to console welcome screen"/];
-    idOutputMenuSelect[/"output to console the following menu selection...\n&#8226 d"/];
-    idOutputRequestUserInput[/"request user input"/];
-    idRecieveUserInput[/"recieve user input"/];
-    idDeterminMenuSelection{"what option did\n the user\n select from\n the menu?"};
+    id3[/"output to console welcome screen"/];
+    id4[/"output to console the following menu selection...\n&#8226 d"/];
+    id5[/"request user input"/];
+    id6[/"recieve user input"/];
+    id7{"what option did\n the user\n select from\n the menu?"};
 
     %% Update the math sorcerer database
-    idUpdateMathSorcererDatabase["update math sorcerer database"];
-    idRequestMathSorcererURL["run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <code>response</code>"]
-    idUseBS4to["use BeautifulSoup, with to parse the <code>response.content</code> variable and store into a variable named soup"]
+    id8["update math sorcerer database"];
+    id9["run request on the following url...  <a href='http://google.com'>link</a> and store into variable called <code>response</code>"]
+    id10["use BeautifulSoup, with to parse the <code>response.content</code> variable and store into a variable named soup"]
 
     %% requests
     %% bs4
     %% pandas
 
-    idStart-->idImportModules-->idStartProgramLoop
-    idStartProgramLoop-->idOutputPrompt-->idOutputMenuSelect;
-    idOutputMenuSelect-->idOutputRequestUserInput-->idRecieveUserInput-->idDeterminMenuSelection-- 1. Update the math sorcerer database -->idUpdateMathSorcererDatabase;idUpdateMathSorcererDatabase-->idRequestMathSorcererURL-->idUseBS4to;
-    idDeterminMenuSelection-- 2. Exit -->idEnd;
+    idStart-->id1-->id2-->id3-->id4-->id5-->id6-->id7-->id8-->id9-->id10-->idEnd;
     
 ```
 </details>
