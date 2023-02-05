@@ -1,5 +1,8 @@
 hello
 
+<details>
+  <summary>Overview of Math Sorcerer Scraper</summary>
+
 ```mermaid
 
 ---
@@ -38,6 +41,10 @@ gitGraph
     merge "release"
 
 ```
+</details>
+
+<details>
+  <summary>Overview of Math Sorcerer Scraper</summary>
 
 ```mermaid
 
@@ -88,3 +95,4 @@ flowchart TB;
     idDeterminMenuSelection-- 2. Exit -->idEnd;
     
 ```
+</details>
