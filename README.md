@@ -103,7 +103,7 @@ flowchart TB;
 ```
 
  ```mermaid 
- %%{init: { 'theme':'dark', 'sequence': {'useMaxWidth':false} } }%%
+ %%{init: { 'theme':'forest', 'sequence': {'useMaxWidth':false} } }%%
  sequenceDiagram 
    alice ->> mark: Sent a flower
  ```
