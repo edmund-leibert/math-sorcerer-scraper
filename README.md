@@ -61,7 +61,7 @@ title: Overview of Math Sorcerer Scraper
 
 %%{
   init: {
-    'theme': 'base',
+    'theme': 'default',
     'themeVariables': {
       'fontSize': '8px',
       'primaryTextColor': '#000000',
