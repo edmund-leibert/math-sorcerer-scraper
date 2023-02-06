@@ -44,30 +44,11 @@ gitGraph
 </details>
 
 
-<style>
-  .cssClass > rect {
-    fill: #ff0000;
-    stroke: #ffff00;
-    stroke-width: 4px;
-  }
-</style>
-
-
 ```mermaid
 
 ---
 title: Overview of Math Sorcerer Scraper
 ---
-
-%%{
-  init: {
-    'theme': 'default',
-    'themeVariables': {
-      'fontSize': '8px',
-      'primaryTextColor': '#000000',
-    }
-  }
-}%%
 
 flowchart TB;
     %% Start and End nodes
