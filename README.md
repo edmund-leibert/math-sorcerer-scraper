@@ -1,7 +1,7 @@
 
 
 <details>
-  <summary>Overview of Math Sorcerer Scraper</summary>
+  <summary>Data Garage Branching Guidelines</summary>
 
 ```mermaid
 
@@ -45,7 +45,7 @@ gitGraph
 
 
 <details>
-  <summary>Overview of Math Sorcerer Scraper</summary>
+<summary>Overview of Math Sorcerer Scraper</summary>
 
 ```mermaid
 
@@ -97,9 +97,13 @@ flowchart TB
 
 
 <details>
-  <summary>Overview of Math Sorcerer Scraper</summary>
-  
+<summary>Database Diagrams</summary>
+
 ```mermaid
+
+---
+title: Database Diagrams
+---
 
 flowchart TB
 
