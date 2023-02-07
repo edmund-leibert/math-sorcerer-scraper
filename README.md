@@ -1,4 +1,4 @@
-hello
+
 
 <details>
   <summary>Overview of Math Sorcerer Scraper</summary>
@@ -44,13 +44,16 @@ gitGraph
 </details>
 
 
+<details>
+  <summary>Overview of Math Sorcerer Scraper</summary>
+
 ```mermaid
 
 ---
 title: Overview of Math Sorcerer Scraper
 ---
 
-flowchart TB;
+flowchart TB
     %% Start and End nodes
     idStart([Start])
     idEnd([End])
@@ -90,3 +93,15 @@ flowchart TB;
     id7-->id15-->id16-->id7
     id7-->idEnd
 ```
+</details>
+
+
+<details>
+  <summary>Overview of Math Sorcerer Scraper</summary>
+  
+```mermaid
+
+flowchart TB
+
+```
+</details>
