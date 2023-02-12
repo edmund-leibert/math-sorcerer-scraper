@@ -1,5 +1,5 @@
-<details>
-  <summary>Data Garage Branching Guidelines</summary>
+<details open>
+  <summary><h2>Git Commit Message Conventions</h2></summary>
 
 Conventional Commit is a formatting convention that provides a set of rules to formulate a consistent commit message structure like so:
 
@@ -47,8 +47,8 @@ Commit types include the following...
 </details>
 
 
-<details>
-  <summary>Data Garage Branching Guidelines</summary>
+<details open>
+  <summary><h2>Data Garage Branching Guidelines</h2></summary>
 
 ```mermaid
 
@@ -91,8 +91,8 @@ gitGraph
 </details>
 
 
-<details>
-<summary>Overview of Math Sorcerer Scraper</summary>
+<details open>
+  <summary><h2>Overview of Math Sorcerer Scraper</h2></summary>
 
 ```mermaid
 
@@ -143,8 +143,8 @@ flowchart TB
 </details>
 
 
-<details>
-<summary>Database Diagrams</summary>
+<details open>
+  <summary><h2>Database Diagrams</h2></summary>
 
 ```mermaid
 
