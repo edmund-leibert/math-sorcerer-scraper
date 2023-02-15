@@ -1,3 +1,5 @@
+# Math Sorcerer’s Scraper
+
 <details open>
   <summary><h2>Git Commit Message Conventions</h2></summary>
 
