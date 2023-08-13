@@ -90,6 +90,9 @@ gitGraph
     merge "release"
 
 ```
+
+When developing in a fork, make sure you have the _main_ that came from the forked be left untouched. Instead create a forked/main which will be your own copy of the main which doens't have to be in sync with the upstream one.
+
 </details>
 
 
