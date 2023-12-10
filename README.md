@@ -63,35 +63,35 @@ gitGraph
     branch "release"
     checkout "main"
     commit
-    branch "feature/feature-A"
+    branch "feature-∋-A"
     commit
     commit
     commit
     checkout "main"
-    merge "feature/feature-A"
-    branch "feature/feature-B"
-    checkout "feature/feature-B"
+    merge "feature-∋-A"
+    branch "feature-∋-B"
+    checkout "feature-∋-B"
     commit
     commit
     checkout "main"
-    merge "feature/feature-B"
-    branch "bugfix/bugfix-A"
+    merge "feature-∋-B"
+    branch "bugfix-∋-A"
     commit
     checkout "main"
-    merge "bugfix/bugfix-A"
+    merge "bugfix-∋-A"
     checkout "release"
     merge "main"
     checkout "release"
-    branch "hotfix/hotfix-A"
+    branch "hotfix-∋-A"
     commit
     checkout "release"
-    merge "hotfix/hotfix-A"
+    merge "hotfix-∋-A"
     checkout "main"
     merge "release"
 
 ```
 
-When developing in a fork, make sure you have the _main_ that came from the forked be left untouched. Instead create a forked/main which will be your own copy of the main which doens't have to be in sync with the upstream one.
+When developing in a fork, make sure you have the `main` that came from the upstream repository be left untouched. Instead create a `forked-∋-main` which will be your own copy of the `main` which doens't have to be in sync with the upstream one.
 
 </details>
 
